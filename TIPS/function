@@ -1,0 +1,13 @@
+La fonction strcpy() copie la chaîne pointée par src (y compris l'octet nul « \0 » final) dans la chaîne pointée par dest. Les deux chaînes ne doivent pas se chevaucher. La chaîne dest doit être assez grande pour accueillir la copie.
+
+La fonction strncpy() est identique, sauf que seuls les n premiers octets de src sont copiés. Avertissement : s'il n'y a pas d'octet nul dans les n premiers octets de src, la chaîne résultante dans dest ne disposera pas d'octet nul final.
+
+La fonction ﻿strlcpy permet de copier une chaîne de caractères dans une autre chaîne en limitant le nombre de caractères copiés.
+
+strcmp compare lexicalement les deux chaînes caractère par caractère et renvoie 0 si les deux chaînes sont égales, un nombre positif si s1 est lexicographiquement supérieure à s2, et un nombre négatif si s1 est lexicographiquement inférieure à s2.
+
+strncmp() est identique sauf qu'elle ne compare que les n (au plus) premiers caractères de s1 et s2.
+
+strcat Cette fonction permet de rajouter à une chaîne de caractères déjà existante le contenu d'une seconde. Autrement dit de concaténer les contenu de deux chaînes de caractères, mais le résultat sera stocké dans la première chaîne passé en paramètre (aucune nouvelle chaîne ne sera produite).
+
+La fonction strncat garanti qu'à la fin de la concaténation, un zéro terminal sera bien produit (même si la limite du nombre de caractères est atteinte).
